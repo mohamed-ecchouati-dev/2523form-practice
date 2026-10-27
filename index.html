@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forum</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="forum">
+        <form action="bleh.php" method="post">
+            <fieldset class="fieldset">
+                <legend id="h1forum"> personal info</legend>
+                    <input class="input" type="text" name="name" id="name" placeholder="name" minlength="3" maxlength="20" required>
+                    <input class="input" type="text" name="familyname" id="familyname" placeholder="Family Name" minlength="3" maxlength="20" required>
+                    <input class="input" type="email" name="email" id="email" placeholder="Email" required>
+                    <input class="input" type="tel" name="phone" id="phone" placeholder="+212..." required>
+                    <br>
+                    <label for="date">Date of Birth:</label>
+                    <input type="date" name="date" id="date" required>
+                    <br><br>
+                    <label for="country">Country:</label>
+                    <select name="city" id="city" required>
+                        <option value="">Select a city</option>
+                        <option value="tmr">Temara</option>
+                        <option value="rbt">rabat</option>
+                        <option value="skh">skhirat</option>
+                        <option value="cbl">Casablanca</option>
+                    </select><br><br>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" id="male" value="male" checked required>
+                    <label for="male">Male</label>
+                    <input  type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend id="h1forum"> formation choice</legend>
+                    
+                    
+                    <label for="education">Education level</label>
+                    <select id="education" name="education" required>
+                        <option value="bc0">bac</option>
+                        <option value="bc1">bac +1</option>
+                        <option value="bc2">bac +2</option>
+                        <option value="bc3">bac +3</option>
+                        <option value="bc4">bac +4</option>
+                        <option value="bc5">bac +5</option>
+                    </select><br><br>
+                    <label for="lang">Programming Language known:</label><br>
+                    <input class="checkbox" type="checkbox" name="html" value="HTML" id="html">
+                    <label for="html">HTML</label>
+
+                    <input class="checkbox" type="checkbox" name="css" value="CSS" id="css">
+                    <label for="css">CSS</label>
+                    <br>
+                    <input class="checkbox" type="checkbox" name="javascript" value="JavaScript" id="javascript">
+                    <label for="javascript">JavaScript</label>
+
+                    <input class="checkbox" type="checkbox" name="php" value="PHP" id="php">
+                    <label for="php">PHP</label>
+                    <br><br>
+                    <label for="debut">Date of starting:</label>
+                    <input type="date" name="debut" id="debut" required>
+                    <br><br>
+                    <label for="message1">Motivations:</label>
+                    <textarea id="message1" name="message1" rows="4" placeholder="Type your motivations here..." required></textarea>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend id="h1forum">Account Creation</legend>
+                    <input class="input" type="text" name="username" id="username" placeholder="username" minlength="4" maxlength="16" required>
+                    <input class="input" type="password" name="password" id="password" placeholder="Password" pattern="{8,16}" required>
+                    <input class="input" type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm password" required><br><br>
+                    <input type="file" name="photo"id="photo" required>
+            </fieldset>            
+            <input class="checkbox" type="checkbox" name="condition" value="accept" id="condition">
+            <label for="condition">I accept all <a href=https://terms.com>terms of service</a></label>
+            <button class="button" type="submit">Register</button>
+            <button class="button" type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

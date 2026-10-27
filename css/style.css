@@ -1,0 +1,64 @@
+:root {
+    --bg-color: #53efef;
+    --border-color: #4a22de;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--bg-color);
+}
+.forum {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 20px;
+    width: 300px;
+    margin: 50px auto;
+}
+
+.input::placeholder {
+    color: var(--border-color);
+}
+
+
+.input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    width: 200px;
+    background-color: var(--bg-color);
+}
+#h1forum {
+    text-align: center;
+    color: var(--border-color); 
+}
+.button {
+    width: 200px;
+    background-color: rgb(42, 3, 93);
+    color: white;
+    border: none;
+    height: 30px;
+    display: block;
+    margin: 10px auto;
+}
+.fieldset {
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+#message1 {
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid var(--border-color);
+}
+.checkbox {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 3px; 
+    
+}
